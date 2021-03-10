@@ -32,39 +32,81 @@
         </nav>    
     </header>        
 
+    <section class="sinopsis contenedor">
+        <div class="sinopsis__div">
+            <h2 class="sinopsis__titulo">Fulbo! Un juego de Fútbol</h3>
+            <p class="sinopsis__parrafo">
+                En <b>Fulbo!</b> seremos los encargados de que nuestro equipo vuelva a ganar el 
+                campeonato nacional, el cual enfrenta a los mejores equipos de la zona, 
+                en un torneo rápido pero intenso, donde jugaremos 10 partidos para determinar 
+                quién es el campeón.
+            </p> 
+            <p class="sinopsis__parrafo">
+                En <b>Fulbo!</b> nadie te va a sacar amarilla por colgarse del alambrado, pero ojo con 
+                que tus partidos sean muy turbios, porque el reclamo de puntos siempre está latente.
+            </p>                 
+        </div>
+    </section>   
 
-    <section class="reglas">
-        <div class="reglas__div-jug-y-dts">
-            <div class="reglas__div-texto">
-                <h3 class="reglas__titulo-jugadores">Jugadores y directores técnicos</h3>
-                <p class="reglas__parrafo-jugadores">
+
+
+    <section class="comienzo contenedor">
+        <div class="comienzo__div">
+            <h3 class="comienzo__titulo">Comienzo</h3>
+            <p class="comienzo__parrafo">
+                Cada jugador completará la planilla de stats de su equipo colocando una ficha en 
+                cada número previamente marcado según cada planilla de equipo (Plantel, Hinchada, 
+                Dirección Técnica y Títulos).
+            </p> 
+            <p class="comienzo__parrafo">
+                • Se repartirán la cantidad de cartas equivalentes a los jugadores participantes 
+                +1  del mazo (Ej: si hay 5 jugadores levantara 6 cartas cada uno) 
+            </p>    
+            <p class="comienzo__parrafo">
+                • Comienza el jugador que haya jugado un partido de fútbol hace menos tiempo. 
+                (El jugador inicial se moverá a la derecha en cada comienzo de ronda.)
+            </p>     
+            <p class="comienzo__parrafo">
+                • En cualquier momento del juego (excepto durante la instancia Partido) los 
+                participantes pueden bajar las cartas modificadoras, para su equipo o para los rivales. 
+                Siempre avisando a los demás jugadores para controlar la correcta suma o resta de puntos.
+            </p>                
+        </div>
+    </section>       
+
+    <section class="tipos-de-cartas">
+        <h2 class="tipos-de-cartas__titulo">Tipos de Cartas</h2>
+        <div class="tipos-de-cartas__div-jug-y-dts">            
+            <div class="tipos-de-cartas__div-texto">
+                <h3 class="tipos-de-cartas__titulo-jugadores">Jugadores y directores técnicos</h3>
+                <p class="tipos-de-cartas__parrafo-jugadores">
                     En el mazo encontraremos diferentes jugadores o Directores técnicos que podremos sumar a nuestro equipo, cada equipo puede tener 4 jugadores y un DT, estos pueden sustituirse por otro en el turno del jugador.
                 </p>   
             </div>
-            <img class="reglas__img-jug-y-dts" src="media/jug-y-dts.png" alt="Imagen Jugadores y Directores Técnicos">          
+            <img class="tipos-de-cartas__img-jug-y-dts" src="media/jug-y-dts.png" alt="Imagen Jugadores y Directores Técnicos">          
         </div>
 
-        <span class="reglas__span"></span>
+        <span class="tipos-de-cartas__span"></span>
 
-        <div class="reglas__div-equipos">
-            <div class="reglas__div-texto">
-                <h3 class="reglas__titulo-equipos">Equipos</h3>
-                <p class="reglas__parrafo-equipos">
+        <div class="tipos-de-cartas__div-equipos">
+            <div class="tipos-de-cartas__div-texto">
+                <h3 class="tipos-de-cartas__titulo-equipos">Equipos</h3>
+                <p class="tipos-de-cartas__parrafo-equipos">
                     En el mazo de equipos tendremos 36 equipos con los cuales enfrentarse, 
                     Cada equipo 4 stats, a los cuales vencer. (Si vencemos la stat tendremos un gol, 
                     si no la vencemos, sera un gol en contra, si la empatamos nadie obtiene un gol.)
                     Para "Ganar el partido" hay que sumar más goles que el equipo contrario.
                 </p>      
             </div>
-            <img class="reglas__img-equipos" src="media/equipos.png" alt="Imagen Equipos">
+            <img class="tipos-de-cartas__img-equipos" src="media/equipos.png" alt="Imagen Equipos">
         </div> 
 
-        <span class="reglas__span"></span>
+        <span class="tipos-de-cartas__span"></span>
 
-        <div class="reglas__div-modificadoras">
-            <div class="reglas__div-texto">
-                <h3 class="reglas__titulo-modificadoras">Modificadoras</h3>
-                <p class="reglas__parrafo-modificadoras ">
+        <div class="tipos-de-cartas__div-modificadoras">
+            <div class="tipos-de-cartas__div-texto">
+                <h3 class="tipos-de-cartas__titulo-modificadoras">Modificadoras</h3>
+                <p class="tipos-de-cartas__parrafo-modificadoras ">
                     Equipo: Cartas que son aplicable y modifican las stats del equipo, quedan afectando 
                     al equipo hasta que se quitan (mediante una carta especial) Se pueden utilizar en 
                     cualquier momento del juego excepto durante un partido. y se pueden aplicar a nuestro 
@@ -81,14 +123,120 @@
                     Depende cada carta se puede jugar antes, después o durante los partidos. 
                 </p>
             </div>            
-            <img class="reglas__img-modificadoras" src="media/modificadoras.png" alt="Imagen Modificadoras">            
+            <img class="tipos-de-cartas__img-modificadoras" src="media/modificadoras.png" alt="Imagen Modificadoras">            
         </div>
     </section>    
               
-       
-   
+    <section class="partido contenedor">
+        <div class="partido__div">
+            <h3 class="partido__titulo">Instancia Partido (TURNO)</h3>
+            <p class="partido__parrafo">
+                En su turno cada jugador deberá dar vuelta una carta EQUIPO del mazo de equipos y enfrentarse:
+            </p> 
+            <p class="partido__parrafo">
+                •El partido se dará por 4 acciones definidas por los stats. La suma de stats Plantel / 
+                La suma de stats Hinchada / La suma de stats Dirección técnica / La suma de stats Títulos 
+            </p>    
+            <p class="partido__parrafo">
+                • El Resultado luego de esas 4 acciones puede ser alterado por las cartas modificadoras 
+                (Ej: agregar goles, o reclamar por Escritorio, etc) estas cartas pueden ser jugadas por 
+                quien participa del partido o por los demás participantes, a favor o en contra de quien 
+                esté jugando.
+            </p>     
+            <p class="partido__parrafo">
+                • Al final de la ronda los jugadores pueden descartar las cartas que no quieran tener en mano, 
+                y luego deben completar en mano 5 cartas cada uno. (si tienen cartas en mano, deben tomar 
+                del mazo las que le falten para completar 5). Esto se hará de a uno en ronda como fue la mano, 
+                quien comenzó la ronda lo hará primero, y así hacía la derecha.
+            </p>      
+            <p class="partido__parrafo">
+                • En determinadas fechas se jugarán partidos entre los jugadores, para esto se utilizará 
+                uno de los cuadros del Fixture adjunto dependiendo la cantidad de jugadores. 
+            </p>                 
+        </div>
+    </section>   
+
+    <section class="campeonato contenedor">
+        <div class="campeonato__div">
+            <h3 class="campeonato__titulo">Campeonato</h3>
+            <p class="campeonato__parrafo">
+                <b>DURACIÓN:</b> Cada jugador deberá completar 10 partidos (incluyendo enfrentamientos entre sí). 
+                Por cada partido ganado el jugador obtendrá una ficha “Triunfo”  y por cada partido empatado se 
+                llevará una ficha de “Empate” cuando se juntan 3 fichas de “Empate” se cambian por una de “Triunfo”. 
+            </p>              
+        </div>
+    </section>   
+
+    <section class="ganador contenedor">
+        <div class="ganador__div">
+            <h3 class="ganador__titulo">GANADOR: Gana la partida quien tenga más fichas en total.</h3>
+            <p class="ganador__parrafo">
+                *EMPATE: Si dos jugadores terminan empatados al cabo de la última fecha, jugarán un partido 
+                entre ello, si este partido termina en empate se definirá con 5 tiradas de dado siendo NEGRO NO GOL 
+                - BLANCO GOL (igual a una tanda de penales) De persistir el empate en esas 5 tiradas, harán una 
+                tirada cada uno. (al igual que una tanda de penales). 
+            </p>              
+        </div>
+    </section>   
+
+    <section class="contenido contenedor">
+        <h2 class="contenido__titulo">Contenido del Juego</h2>
+        <div class="contenido__div-total">
+            <h4 class="contenido__div-total-subtitulo">Cantidad Total de cartas</h5>
+            <ul class="contenido__div-total-lista">
+                <li class="contenido__div-total-lista-item">36 equipos</li>
+                <li class="contenido__div-total-lista-item">22 jugadores</li>
+                <li class="contenido__div-total-lista-item">10 técnicos</li>
+                <li class="contenido__div-total-lista-item">88 Cartas de Modificación</li>    
+            </ul>                   
+        </div>    
+        <h3 class="contenido__subtitulo">Cartas de Modificacion</h3>
+        <div class="contenido__div-cartas">
+            <div class="contenido__div-modificadoras">
+                <h4 class="contenido__div-modificadoras-titulo">Jugador</h4>
+                <ul class="contenido__div-modificadoras-lista">
+                    <li class="contenido__div-modificadoras-lista-item">Trabar con la cabeza x6</li>
+                    <li class="contenido__div-modificadoras-lista-item">Tirador de caños x3</li>
+                    <li class="contenido__div-modificadoras-lista-item">Pecho Frío x3</li>
+                    <li class="contenido__div-modificadoras-lista-item">Rotura de meñiscos x3</li>   
+                    <li class="contenido__div-modificadoras-lista-item">Le pesa la camiseta x3</li> 
+                    <li class="contenido__div-modificadoras-lista-item">Barillete Cósmico x4</li>  
+                </ul>      
+            </div>
+            <div class="contenido__div-modificadoras">
+                <h4 class="contenido__div-modificadoras-titulo">Especiales</h4>
+                <ul class="contenido__div-modificadoras-lista">
+                    <li class="contenido__div-modificadoras-lista-item">36 equipos</li>
+                    <li class="contenido__div-modificadoras-lista-item">22 jugadores</li>
+                    <li class="contenido__div-modificadoras-lista-item">10 técnicos</li>
+                    <li class="contenido__div-modificadoras-lista-item">88 Cartas de Modificación</li>    
+                </ul>      
+            </div>
+            <div class="contenido__div-modificadoras">
+                <h4 class="contenido__div-modificadoras-titulo">Equipo</h4>
+                <ul class="contenido__div-modificadoras-lista">
+                    <li class="contenido__div-modificadoras-lista-item">36 equipos</li>
+                    <li class="contenido__div-modificadoras-lista-item">22 jugadores</li>
+                    <li class="contenido__div-modificadoras-lista-item">10 técnicos</li>
+                    <li class="contenido__div-modificadoras-lista-item">88 Cartas de Modificación</li>    
+                </ul>      
+            </div>
+            <div class="contenido__div-modificadoras">
+                <h4 class="contenido__div-modificadoras-titulo">En Partido</h4>
+                <ul class="contenido__div-modificadoras-lista">
+                    <li class="contenido__div-modificadoras-lista-item">36 equipos</li>
+                    <li class="contenido__div-modificadoras-lista-item">22 jugadores</li>
+                    <li class="contenido__div-modificadoras-lista-item">10 técnicos</li>
+                    <li class="contenido__div-modificadoras-lista-item">88 Cartas de Modificación</li>    
+                </ul>      
+            </div>
 
 
+
+
+        </div> 
+        
+    </section>
 
     
     

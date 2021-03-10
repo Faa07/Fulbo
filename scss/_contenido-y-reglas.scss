@@ -1,29 +1,99 @@
 /* CONTENIDO Y REGLAS */ 
 
-.reglas {
+.sinopsis {
+    max-width: 1200px;
+    display: flex;    
+    padding: 30px 0;       
+    .sinopsis__div {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 150px;    
+        border-bottom: solid 1px $amarillo;     
+        padding-bottom: 50px;
+        .sinopsis__titulo {
+            font-family: $fuente-titulo;
+            font-size: calc(1rem + 1vw);
+            color: $amarillo;  
+            margin: auto; 
+            text-shadow: 2px 2px black;            
+        }
+        .sinopsis__parrafo {
+            width: 100%;
+            font-family: $fuente-parrafo;
+            color: $white;                
+            line-height: 150%;
+            font-size: calc(0.3rem + 0.8vw);
+            justify-self: center;    
+            text-align: justify; 
+            text-shadow: 2px 2px black;             
+        }
+    }
+}  
+
+.comienzo {
+    max-width: 1200px;
+    display: flex;    
+    padding: 30px 0;        
+    .comienzo__div {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;   
+        border-bottom: solid 1px $amarillo;                
+        .comienzo__titulo {
+            font-family: $fuente-titulo;
+            font-size: calc(1rem + 1vw);
+            color: $amarillo;  
+            margin: auto; 
+            text-shadow: 2px 2px black;            
+        }
+        .comienzo__parrafo {
+            width: 100%;
+            font-family: $fuente-parrafo;
+            color: $white;                
+            line-height: 150%;
+            font-size: calc(0.3rem + 0.8vw);
+            justify-self: center;    
+            text-align: justify; 
+            text-shadow: 2px 2px black;  
+        }
+    }
+}  
+
+.tipos-de-cartas {
     max-width: 1200px;    
     margin: 0 auto;
     display: flex;
-    flex-direction: column;    
-    .reglas__div-jug-y-dts {
+    flex-direction: column;   
+    .tipos-de-cartas__titulo {
+        font-family: $fuente-titulo;
+        font-size: calc(1.3rem + 1vw);
+        color: $amarillo;  
+        margin: auto; 
+        text-shadow: 2px 2px black;         
+    } 
+    .tipos-de-cartas__div-jug-y-dts {
         max-width: 100%;        
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-rows: 100%;
-        margin-top: 150px; 
+        margin-top: 50px; 
         margin-bottom: 50px;       
-        .reglas__div-texto {
+        .tipos-de-cartas__div-texto {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            .reglas__titulo-jugadores {
+            .tipos-de-cartas__titulo-jugadores {
                 font-family: $fuente-titulo;
                 font-size: 22pt;
                 color: $amarillo;  
                 margin: 0; 
                 text-shadow: 2px 2px black;
             }            
-            .reglas__parrafo-jugadores {
+            .tipos-de-cartas__parrafo-jugadores {
                 width: 90%;
                 font-family: $fuente-parrafo;
                 color: $white;                
@@ -34,19 +104,19 @@
                 text-shadow: 2px 2px black;
             }            
         }
-        .reglas__img-jug-y-dts {
+        .tipos-de-cartas__img-jug-y-dts {
             justify-self: center;
             align-items: center;            
         }
     }
-    .reglas__span {               
+    .tipos-de-cartas__span {               
         border-bottom: solid 2px $white;
         width: 80%;
         margin: auto;
         padding: 15px 0;
         opacity: 0.7;        
     }
-    .reglas__div-equipos {
+    .tipos-de-cartas__div-equipos {
         max-width: 1200px;
         height: auto;
         display: grid;
@@ -55,10 +125,10 @@
         margin-top: 50px;
         margin-bottom: 50px;
         
-        .reglas__div-texto {
+        .tipos-de-cartas__div-texto {
             display: flex;
             flex-direction: column;            
-            .reglas__titulo-equipos {
+            .tipos-de-cartas__titulo-equipos {
                 font-family: $fuente-titulo;
                 font-size: 22pt;
                 color: $amarillo;  
@@ -66,7 +136,7 @@
                 text-align: center;
                 text-shadow: 2px 2px black;
             } 
-            .reglas__parrafo-equipos {
+            .tipos-de-cartas__parrafo-equipos {
                 width: 100%;
                 font-family: $fuente-parrafo;
                 color: $white;                
@@ -77,21 +147,24 @@
                 text-shadow: 2px 2px black;
             }     
         } 
-        .reglas__img-equipos {
+        .tipos-de-cartas__img-equipos {
             max-width: 1200px;                    
         }
     } 
-    .reglas__div-modificadoras {
+
+    .tipos-de-cartas__div-modificadoras {
         max-width: 1200px;        
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 40% 60%;
         margin-bottom: 50px;
-        .reglas__div-texto {
+        border-bottom: solid 1px $amarillo;     
+        padding-bottom: 50px;  
+        .tipos-de-cartas__div-texto {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            .reglas__titulo-modificadoras {
+            .tipos-de-cartas__titulo-modificadoras {
                 font-family: $fuente-titulo;
                 font-size: 22pt;
                 color: $amarillo;  
@@ -99,7 +172,7 @@
                 text-align: center;
                 text-shadow: 2px 2px black;
             } 
-            .reglas__parrafo-modificadoras {
+            .tipos-de-cartas__parrafo-modificadoras {
                 max-width: 1200px;
                 font-family: $fuente-parrafo;
                 color: $white;                
@@ -110,8 +183,173 @@
                 text-shadow: 2px 2px black;
             }     
         } 
-        .reglas__img-equipos {
+        .tipos-de-cartas__img-equipos {
             max-width: 1200px;                    
         }
     }   
 }
+
+.partido {
+    max-width: 1200px;
+    display: flex;    
+    padding: 30px 0;        
+    .partido__div {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;   
+        border-bottom: solid 1px $amarillo;     
+        padding-bottom: 50px;     
+        .partido__titulo {
+            font-family: $fuente-titulo;
+            font-size: calc(1.3rem + 1vw);
+            color: $amarillo;  
+            margin: auto; 
+            text-shadow: 2px 2px black;            
+        }
+        .partido__parrafo {
+            width: 100%;
+            font-family: $fuente-parrafo;
+            color: $white;                
+            line-height: 150%;
+            font-size: calc(1rem + 0.5vw);
+            justify-self: center;    
+            text-align: justify; 
+            text-shadow: 2px 2px black;  
+        }
+    }
+}  
+
+.campeonato {
+    max-width: 1200px;
+    display: flex;    
+    padding: 30px 0;        
+    .campeonato__div {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;   
+        border-bottom: solid 1px $amarillo;     
+        padding-bottom: 50px;     
+        .campeonato__titulo {
+            font-family: $fuente-titulo;
+            font-size: calc(1.3rem + 1vw);
+            color: $amarillo;  
+            margin: auto; 
+            text-shadow: 2px 2px black;            
+        }
+        .campeonato__parrafo {
+            width: 100%;
+            font-family: $fuente-parrafo;
+            color: $white;                
+            line-height: 150%;
+            font-size: calc(1rem + 0.5vw);
+            justify-self: center;    
+            text-align: justify; 
+            text-shadow: 2px 2px black;  
+        }
+    }
+}  
+
+.ganador {
+    max-width: 1200px;
+    display: flex;    
+    padding: 30px 0;        
+    .ganador__div {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;               
+        padding-bottom: 50px;     
+        .ganador__titulo {
+            font-family: $fuente-titulo;
+            font-size: calc(1.3rem + 1vw);
+            color: $amarillo;  
+            margin: auto; 
+            text-shadow: 2px 2px black;            
+        }
+        .ganador__parrafo {
+            width: 100%;
+            font-family: $fuente-parrafo;
+            color: $white;                
+            line-height: 150%;
+            font-size: calc(1rem + 0.5vw);
+            justify-self: center;    
+            text-align: justify; 
+            text-shadow: 2px 2px black;  
+        }
+    }
+}  
+
+.contenido {
+    max-width: 1200px;
+    display: flex;  
+    flex-direction: column;  
+    padding: 30px 0;     
+    .contenido__titulo {
+        font-family: $fuente-titulo;
+        font-size: calc(1.6rem + 1vw);
+        color: $amarillo;  
+        margin: auto; 
+        text-shadow: 2px 2px black; 
+    }   
+    .contenido__div-total {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;                      
+        padding-bottom: 15px;     
+        .contenido__div-total-subtitulo {
+            font-family: $fuente-titulo;
+            font-size: calc(0.8rem + 1vw);
+            color: $amarillo;              
+            text-shadow: 2px 2px black;            
+        }
+        .contenido__div-total-lista {
+            width: 100%;
+            font-family: $fuente-parrafo;
+            color: $white;                
+            line-height: 150%;
+            font-size: calc(0.6rem + 0.5vw);
+            justify-self: center;    
+            text-align: justify; 
+            text-shadow: 2px 2px black;                
+            
+        }
+    }
+    .contenido__subtitulo {
+        font-family: $fuente-titulo;
+        font-size: calc(0.7rem + 1vw);
+        color: $amarillo;  
+        margin: auto; 
+        text-shadow: 2px 2px black;  
+    }
+    .contenido__div-cartas {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;               
+        padding-bottom: 50px;  
+        .contenido__div-modificadoras-titulo {
+            font-family: $fuente-titulo;
+            font-size: calc(0.5rem + 1vw);
+            color: $amarillo;  
+            margin: auto; 
+            text-shadow: 2px 2px black;  
+        }  
+        .contenido__div-modificadoras-lista {
+            width: 100%;
+            font-family: $fuente-parrafo;
+            color: $white;                
+            line-height: 150%;
+            font-size: calc(0.6rem + 0.5vw);
+            justify-self: center;    
+            text-align: justify; 
+            text-shadow: 2px 2px black;
+        }
+    }
+}  

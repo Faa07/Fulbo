@@ -35,29 +35,90 @@
       text-shadow: 2px 2px black; }
 
 /* CONTENIDO Y REGLAS */
-.reglas {
+.sinopsis {
+  max-width: 1200px;
+  display: flex;
+  padding: 30px 0; }
+  .sinopsis .sinopsis__div {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    border-bottom: solid 1px #FFD163;
+    padding-bottom: 50px; }
+    .sinopsis .sinopsis__div .sinopsis__titulo {
+      font-family: "Pridi", serif;
+      font-size: calc(1rem + 1vw);
+      color: #FFD163;
+      margin: auto;
+      text-shadow: 2px 2px black; }
+    .sinopsis .sinopsis__div .sinopsis__parrafo {
+      width: 100%;
+      font-family: "Open Sans", sans-serif, justify;
+      color: #ffffff;
+      line-height: 150%;
+      font-size: calc(0.3rem + 0.8vw);
+      justify-self: center;
+      text-align: justify;
+      text-shadow: 2px 2px black; }
+
+.comienzo {
+  max-width: 1200px;
+  display: flex;
+  padding: 30px 0; }
+  .comienzo .comienzo__div {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: solid 1px #FFD163; }
+    .comienzo .comienzo__div .comienzo__titulo {
+      font-family: "Pridi", serif;
+      font-size: calc(1rem + 1vw);
+      color: #FFD163;
+      margin: auto;
+      text-shadow: 2px 2px black; }
+    .comienzo .comienzo__div .comienzo__parrafo {
+      width: 100%;
+      font-family: "Open Sans", sans-serif, justify;
+      color: #ffffff;
+      line-height: 150%;
+      font-size: calc(0.3rem + 0.8vw);
+      justify-self: center;
+      text-align: justify;
+      text-shadow: 2px 2px black; }
+
+.tipos-de-cartas {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column; }
-  .reglas .reglas__div-jug-y-dts {
+  .tipos-de-cartas .tipos-de-cartas__titulo {
+    font-family: "Pridi", serif;
+    font-size: calc(1.3rem + 1vw);
+    color: #FFD163;
+    margin: auto;
+    text-shadow: 2px 2px black; }
+  .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts {
     max-width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 100%;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 50px; }
-    .reglas .reglas__div-jug-y-dts .reglas__div-texto {
+    .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .reglas .reglas__div-jug-y-dts .reglas__div-texto .reglas__titulo-jugadores {
+      .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto .tipos-de-cartas__titulo-jugadores {
         font-family: "Pridi", serif;
         font-size: 22pt;
         color: #FFD163;
         margin: 0;
         text-shadow: 2px 2px black; }
-      .reglas .reglas__div-jug-y-dts .reglas__div-texto .reglas__parrafo-jugadores {
+      .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-jugadores {
         width: 90%;
         font-family: "Open Sans", sans-serif, justify;
         color: #ffffff;
@@ -66,16 +127,16 @@
         justify-self: center;
         text-align: justify;
         text-shadow: 2px 2px black; }
-    .reglas .reglas__div-jug-y-dts .reglas__img-jug-y-dts {
+    .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__img-jug-y-dts {
       justify-self: center;
       align-items: center; }
-  .reglas .reglas__span {
+  .tipos-de-cartas .tipos-de-cartas__span {
     border-bottom: solid 2px #ffffff;
     width: 80%;
     margin: auto;
     padding: 15px 0;
     opacity: 0.7; }
-  .reglas .reglas__div-equipos {
+  .tipos-de-cartas .tipos-de-cartas__div-equipos {
     max-width: 1200px;
     height: auto;
     display: grid;
@@ -83,17 +144,17 @@
     grid-template-rows: 30% 70%;
     margin-top: 50px;
     margin-bottom: 50px; }
-    .reglas .reglas__div-equipos .reglas__div-texto {
+    .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__div-texto {
       display: flex;
       flex-direction: column; }
-      .reglas .reglas__div-equipos .reglas__div-texto .reglas__titulo-equipos {
+      .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__div-texto .tipos-de-cartas__titulo-equipos {
         font-family: "Pridi", serif;
         font-size: 22pt;
         color: #FFD163;
         margin: 0;
         text-align: center;
         text-shadow: 2px 2px black; }
-      .reglas .reglas__div-equipos .reglas__div-texto .reglas__parrafo-equipos {
+      .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-equipos {
         width: 100%;
         font-family: "Open Sans", sans-serif, justify;
         color: #ffffff;
@@ -102,26 +163,28 @@
         justify-self: center;
         text-align: justify;
         text-shadow: 2px 2px black; }
-    .reglas .reglas__div-equipos .reglas__img-equipos {
+    .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__img-equipos {
       max-width: 1200px; }
-  .reglas .reglas__div-modificadoras {
+  .tipos-de-cartas .tipos-de-cartas__div-modificadoras {
     max-width: 1200px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 40% 60%;
-    margin-bottom: 50px; }
-    .reglas .reglas__div-modificadoras .reglas__div-texto {
+    margin-bottom: 50px;
+    border-bottom: solid 1px #FFD163;
+    padding-bottom: 50px; }
+    .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__div-texto {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .reglas .reglas__div-modificadoras .reglas__div-texto .reglas__titulo-modificadoras {
+      .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__div-texto .tipos-de-cartas__titulo-modificadoras {
         font-family: "Pridi", serif;
         font-size: 22pt;
         color: #FFD163;
         margin: 0;
         text-align: center;
         text-shadow: 2px 2px black; }
-      .reglas .reglas__div-modificadoras .reglas__div-texto .reglas__parrafo-modificadoras {
+      .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-modificadoras {
         max-width: 1200px;
         font-family: "Open Sans", sans-serif, justify;
         color: #ffffff;
@@ -130,8 +193,151 @@
         justify-self: center;
         text-align: justify;
         text-shadow: 2px 2px black; }
-    .reglas .reglas__div-modificadoras .reglas__img-equipos {
+    .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__img-equipos {
       max-width: 1200px; }
+
+.partido {
+  max-width: 1200px;
+  display: flex;
+  padding: 30px 0; }
+  .partido .partido__div {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    border-bottom: solid 1px #FFD163;
+    padding-bottom: 50px; }
+    .partido .partido__div .partido__titulo {
+      font-family: "Pridi", serif;
+      font-size: calc(1.3rem + 1vw);
+      color: #FFD163;
+      margin: auto;
+      text-shadow: 2px 2px black; }
+    .partido .partido__div .partido__parrafo {
+      width: 100%;
+      font-family: "Open Sans", sans-serif, justify;
+      color: #ffffff;
+      line-height: 150%;
+      font-size: calc(1rem + 0.5vw);
+      justify-self: center;
+      text-align: justify;
+      text-shadow: 2px 2px black; }
+
+.campeonato {
+  max-width: 1200px;
+  display: flex;
+  padding: 30px 0; }
+  .campeonato .campeonato__div {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    border-bottom: solid 1px #FFD163;
+    padding-bottom: 50px; }
+    .campeonato .campeonato__div .campeonato__titulo {
+      font-family: "Pridi", serif;
+      font-size: calc(1.3rem + 1vw);
+      color: #FFD163;
+      margin: auto;
+      text-shadow: 2px 2px black; }
+    .campeonato .campeonato__div .campeonato__parrafo {
+      width: 100%;
+      font-family: "Open Sans", sans-serif, justify;
+      color: #ffffff;
+      line-height: 150%;
+      font-size: calc(1rem + 0.5vw);
+      justify-self: center;
+      text-align: justify;
+      text-shadow: 2px 2px black; }
+
+.ganador {
+  max-width: 1200px;
+  display: flex;
+  padding: 30px 0; }
+  .ganador .ganador__div {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px; }
+    .ganador .ganador__div .ganador__titulo {
+      font-family: "Pridi", serif;
+      font-size: calc(1.3rem + 1vw);
+      color: #FFD163;
+      margin: auto;
+      text-shadow: 2px 2px black; }
+    .ganador .ganador__div .ganador__parrafo {
+      width: 100%;
+      font-family: "Open Sans", sans-serif, justify;
+      color: #ffffff;
+      line-height: 150%;
+      font-size: calc(1rem + 0.5vw);
+      justify-self: center;
+      text-align: justify;
+      text-shadow: 2px 2px black; }
+
+.contenido {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0; }
+  .contenido .contenido__titulo {
+    font-family: "Pridi", serif;
+    font-size: calc(1.6rem + 1vw);
+    color: #FFD163;
+    margin: auto;
+    text-shadow: 2px 2px black; }
+  .contenido .contenido__div-total {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15px; }
+    .contenido .contenido__div-total .contenido__div-total-subtitulo {
+      font-family: "Pridi", serif;
+      font-size: calc(0.8rem + 1vw);
+      color: #FFD163;
+      text-shadow: 2px 2px black; }
+    .contenido .contenido__div-total .contenido__div-total-lista {
+      width: 100%;
+      font-family: "Open Sans", sans-serif, justify;
+      color: #ffffff;
+      line-height: 150%;
+      font-size: calc(0.6rem + 0.5vw);
+      justify-self: center;
+      text-align: justify;
+      text-shadow: 2px 2px black; }
+  .contenido .contenido__subtitulo {
+    font-family: "Pridi", serif;
+    font-size: calc(0.7rem + 1vw);
+    color: #FFD163;
+    margin: auto;
+    text-shadow: 2px 2px black; }
+  .contenido .contenido__div-cartas {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 50px; }
+    .contenido .contenido__div-cartas .contenido__div-modificadoras-titulo {
+      font-family: "Pridi", serif;
+      font-size: calc(0.5rem + 1vw);
+      color: #FFD163;
+      margin: auto;
+      text-shadow: 2px 2px black; }
+    .contenido .contenido__div-cartas .contenido__div-modificadoras-lista {
+      width: 100%;
+      font-family: "Open Sans", sans-serif, justify;
+      color: #ffffff;
+      line-height: 150%;
+      font-size: calc(0.6rem + 0.5vw);
+      justify-self: center;
+      text-align: justify;
+      text-shadow: 2px 2px black; }
 
 .section-creacion {
   max-width: 1200px;
@@ -294,12 +500,15 @@
         height: 50px;
         margin: 10px 0 35px 0;
         border: none;
-        color: black;
-        background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+        color: #ffffff;
+        background: #224F99;
         font-family: "Pridi", serif;
         font-size: 12pt;
         border-radius: 5px;
         cursor: pointer; }
+      .section-form .form .form__div .form__button:hover {
+        background: #165C21;
+        transition: 1s; }
 
 /* VARIABLES */
 /* GENERAL */

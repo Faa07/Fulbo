@@ -106,13 +106,18 @@
                 height: 50px;
                 margin: 10px 0 35px 0;
                 border: none;
-                color: black;
-                background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+                color: $white;
+                background: $blue;
                 font-family: $fuente-titulo;
                 font-size: 12pt;
                 border-radius: 5px;
                 cursor: pointer;
             }
+            .form__button:hover {
+                background: $green;
+                transition: 1s;
+            }
+            
         }
     }
 }
