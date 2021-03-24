@@ -863,7 +863,8 @@ body {
       border-bottom: solid 1px #FFD163;
       padding-bottom: 20px; }
       .sinopsis .sinopsis__div .sinopsis__titulo {
-        font-size: calc(1.3rem + 1vw); }
+        font-size: calc(1.3rem + 1vw);
+        padding: 0 20px; }
       .sinopsis .sinopsis__div .sinopsis__parrafo {
         line-height: 200%;
         text-shadow: 1px 1px black;
