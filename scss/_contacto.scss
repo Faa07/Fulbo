@@ -17,7 +17,7 @@
             .form__titulo {
                 font-family: $fuente-titulo;
                 font-size: $tamaño-titulo;
-                color: $blue;  
+                color: $green;  
                 margin: auto; 
                 padding: 30px 0;                
             }
@@ -102,14 +102,15 @@
                 margin: 10px 0 35px 0;
                 border: none;
                 color: $white;
-                background: $blue;
+                background: $green;
                 font-family: $fuente-titulo;
                 font-size: 12pt;
                 border-radius: 5px;
                 cursor: pointer;
             }
             .form__button:hover {
-                background: $green;
+                color: black;
+                background: $amarillo;
                 transition: 1s;
             }            
         }
