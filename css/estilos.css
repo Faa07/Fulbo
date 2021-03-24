@@ -55,7 +55,7 @@
       margin: auto;
       text-shadow: 2px 2px black; }
     .sinopsis .sinopsis__div .sinopsis__parrafo {
-      width: 100%;
+      max-width: 100%;
       font-family: "Open Sans", sans-serif, justify;
       color: #ffffff;
       line-height: 150%;
@@ -83,7 +83,7 @@
       margin: auto;
       text-shadow: 2px 2px black; }
     .comienzo .comienzo__div .comienzo__parrafo {
-      width: 100%;
+      max-width: 100%;
       font-family: "Open Sans", sans-serif, justify;
       color: #ffffff;
       line-height: 150%;
@@ -123,7 +123,7 @@
         text-shadow: 2px 2px black;
         padding: 0 20px; }
       .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-jugadores {
-        width: 90%;
+        max-width: 90%;
         font-family: "Open Sans", sans-serif, justify;
         color: #ffffff;
         line-height: 150%;
@@ -135,12 +135,6 @@
     .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__img-jug-y-dts {
       justify-self: center;
       align-items: center; }
-  .tipos-de-cartas .tipos-de-cartas__span {
-    border-bottom: solid 2px #ffffff;
-    width: 90%;
-    margin: auto;
-    padding: 15px 0;
-    opacity: 0.7; }
   .tipos-de-cartas .tipos-de-cartas__div-equipos {
     max-width: 1200px;
     height: auto;
@@ -160,7 +154,7 @@
         text-align: center;
         text-shadow: 2px 2px black; }
       .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-equipos {
-        width: 100%;
+        max-width: 100%;
         font-family: "Open Sans", sans-serif, justify;
         color: #ffffff;
         line-height: 150%;
@@ -225,7 +219,7 @@
       margin: auto;
       text-shadow: 2px 2px black; }
     .partido .partido__div .partido__parrafo {
-      width: 100%;
+      max-width: 100%;
       font-family: "Open Sans", sans-serif, justify;
       color: #ffffff;
       line-height: 150%;
@@ -253,7 +247,7 @@
       margin: auto;
       text-shadow: 2px 2px black; }
     .campeonato .campeonato__div .campeonato__parrafo {
-      width: 100%;
+      max-width: 100%;
       font-family: "Open Sans", sans-serif, justify;
       color: #ffffff;
       line-height: 150%;
@@ -273,7 +267,8 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    border-bottom: solid 1px #FFD163; }
     .ganador .ganador__div .ganador__titulo {
       font-family: "Pridi", serif;
       font-size: calc(1rem + 1vw);
@@ -313,7 +308,7 @@
       color: #FFD163;
       text-shadow: 2px 2px black; }
     .contenido .contenido__div-total .contenido__div-total-lista {
-      width: 100%;
+      max-width: 100%;
       font-family: "Open Sans", sans-serif, justify;
       color: #ffffff;
       line-height: 150%;
@@ -341,7 +336,7 @@
       margin: auto;
       text-shadow: 2px 2px black; }
     .contenido .contenido__div-cartas .contenido__div-modificadoras-lista {
-      width: 100%;
+      max-width: 100%;
       font-family: "Open Sans", sans-serif, justify;
       color: #ffffff;
       line-height: 150%;
@@ -408,7 +403,7 @@
   margin: auto; }
   .galeria__section .galeria__div {
     max-width: 100%;
-    margin: auto;
+    margin: 0 20px;
     display: grid;
     grid-template-areas: "1 2 3" "4 5 6" "7 8 9";
     grid-column-gap: 15px;
@@ -725,7 +720,7 @@ body {
 
 @media all and (max-width: 575.98px) {
   .contenedor {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto; }
   /* HEADER */
   .header {
@@ -813,7 +808,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap; }
     .footer .footer__div-enlaces .footer__fulbo {
-      justify-content: left;
       padding-left: 0;
       justify-content: center;
       margin-bottom: 30px; }
@@ -926,8 +920,6 @@ body {
       .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__img-jug-y-dts {
         margin-top: -30px;
         max-width: 100%; }
-    .tipos-de-cartas .tipos-de-cartas__span {
-      display: none; }
     .tipos-de-cartas .tipos-de-cartas__div-equipos {
       max-width: 100%;
       margin: auto;
@@ -1083,53 +1075,53 @@ body {
     .galeria__titulo-div .galeria__titulo {
       font-size: calc(1.3rem + 1vw); }
   .galeria__section {
-    max-width: 500px;
+    max-width: 100%;
     margin: auto; }
     .galeria__section .galeria__div {
-      max-width: 500px;
+      max-width: 100%;
       margin: auto;
       display: flex;
       flex-direction: wrap;
       flex-wrap: wrap; }
       .galeria__section .galeria__div .galeria__item-1 {
-        max-width: 500px; }
+        max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-1 .galeria__img1 {
           height: auto;
           padding: 0 20px; }
       .galeria__section .galeria__div .galeria__item-2 {
-        max-width: 500px; }
+        max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-2 .galeria__img2 {
           height: auto;
           padding: 0 20px; }
       .galeria__section .galeria__div .galeria__item-3 {
-        max-width: 500px; }
+        max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-3 .galeria__img3 {
           height: auto;
           padding: 0 20px; }
       .galeria__section .galeria__div .galeria__item-4 {
-        max-width: 500px; }
+        max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-4 .galeria__img4 {
           height: auto;
           padding: 0 20px; }
       .galeria__section .galeria__div .galeria__item-5 {
         display: none; }
       .galeria__section .galeria__div .galeria__item-6 {
-        max-width: 500px; }
+        max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-6 .galeria__img6 {
           height: auto;
           padding: 0 20px; }
       .galeria__section .galeria__div .galeria__item-7 {
-        max-width: 500px; }
+        max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-7 .galeria__img7 {
           height: auto;
           padding: 0 20px; }
       .galeria__section .galeria__div .galeria__item-8 {
-        max-width: 500px; }
+        max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-8 .galeria__img8 {
           height: auto;
           padding: 0 20px; }
       .galeria__section .galeria__div .galeria__item-9 {
-        max-width: 500px; }
+        max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-9 .galeria__img9 {
           height: auto;
           padding: 0 20px; }
@@ -1166,7 +1158,7 @@ body {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .contenedor {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto; }
   /* HEADER */
   .header {
@@ -1249,7 +1241,7 @@ body {
       max-width: 100%;
       pointer-events: none; }
   .introduccion {
-    max-width: 700px;
+    max-width: 80%;
     margin-top: -30px; }
     .introduccion .introduccion__div .introduccion__titulo {
       font-size: calc(1.3rem + 1vw); }
@@ -1261,7 +1253,7 @@ body {
       padding: 0 20px; }
   /* CONTENIDO Y REGLAS */
   .sinopsis {
-    width: 700px;
+    max-width: 80%;
     margin-top: 0;
     display: flex;
     padding: 10px 0; }
@@ -1278,7 +1270,7 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
   .comienzo {
-    max-width: 700px;
+    max-width: 80%;
     padding: 10px 0; }
     .comienzo .comienzo__div {
       margin-top: 10px;
@@ -1293,7 +1285,7 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
   .tipos-de-cartas {
-    max-width: 700px;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column; }
@@ -1304,7 +1296,7 @@ body {
       max-width: 100%;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 30% 70%;
+      grid-template-rows: auto;
       margin-top: 10px;
       margin-bottom: 10px; }
       .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto {
@@ -1312,9 +1304,10 @@ body {
         .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto .tipos-de-cartas__subtitulo-jugadores {
           margin: auto;
           font-size: calc(1rem + 1vw);
-          text-align: center; }
+          text-align: center;
+          margin-bottom: 20px; }
         .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-jugadores {
-          width: 100%;
+          max-width: 100%;
           line-height: 200%;
           text-shadow: 1px 1px black;
           font-weight: 900;
@@ -1322,14 +1315,15 @@ body {
           padding: 0 20px; }
       .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__img-jug-y-dts {
         margin-top: -20px;
-        max-width: 700px; }
-    .tipos-de-cartas .tipos-de-cartas__span {
-      width: 80%;
-      margin: 20px auto;
-      padding: 0; }
+        max-width: 100%; }
     .tipos-de-cartas .tipos-de-cartas__div-equipos {
-      max-width: 700px;
-      margin: auto; }
+      max-width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      margin-top: 50px;
+      margin-bottom: 50px; }
       .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__div-texto .tipos-de-cartas__subtitulo-equipos {
         font-size: calc(1rem + 1vw); }
       .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-equipos {
@@ -1339,16 +1333,16 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
       .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__img-equipos {
-        max-width: 700px;
-        margin-top: 60px; }
+        max-width: 100%;
+        margin-top: 50px; }
     .tipos-de-cartas .tipos-de-cartas__div-modificadoras {
-      max-width: 700px;
-      margin-top: 0;
+      max-width: 100%;
+      margin-top: 50px;
       padding-bottom: 0;
       box-sizing: border-box;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 60% 40%; }
+      grid-template-rows: auto; }
       .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__div-texto .tipos-de-cartas__subtitulo-modificadoras {
         font-size: calc(1rem + 1vw); }
       .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-modificadoras {
@@ -1358,10 +1352,10 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
       .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__img-modificadoras {
-        width: 700px;
+        max-width: 100%;
         margin-bottom: 30px; }
   .partido {
-    max-width: 700px;
+    max-width: 80%;
     padding: 0; }
     .partido .partido__div {
       margin-top: 0; }
@@ -1374,7 +1368,7 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
   .campeonato {
-    max-width: 700px;
+    max-width: 80%;
     display: flex;
     padding: 0; }
     .campeonato .campeonato__div {
@@ -1389,7 +1383,7 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
   .ganador {
-    max-width: 700px;
+    max-width: 80%;
     display: flex;
     padding: 20px 0; }
     .ganador .ganador__div {
@@ -1409,7 +1403,7 @@ body {
         font-weight: 900;
         padding: 0 20px; }
   .contenido {
-    max-width: 700px;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     padding: 0; }
@@ -1443,12 +1437,12 @@ body {
         font-weight: 900; }
   /* HISTORIA */
   .section-creacion {
-    max-width: 700px;
+    max-width: 80%;
     padding-top: 20px;
     margin: auto;
     padding-bottom: 50px; }
     .section-creacion .section-creacion__div {
-      max-width: 700px; }
+      max-width: 100%; }
       .section-creacion .section-creacion__div .section-creacion__titulo {
         font-size: calc(1.3rem + 1vw); }
       .section-creacion .section-creacion__div .section-creacion__parrafo {
@@ -1458,11 +1452,11 @@ body {
         font-weight: 900;
         padding: 0 20px; }
   .section-youtube {
-    max-width: 700px;
+    max-width: 80%;
     padding-top: 10px;
     padding-bottom: 10px; }
     .section-youtube .section-youtube__video {
-      width: 700px;
+      width: 100%;
       height: 550px; }
   /* IMAGENES */
   .galeria__titulo-div {
@@ -1475,10 +1469,10 @@ body {
     .galeria__titulo-div .galeria__titulo {
       font-size: calc(1.3rem + 1vw); }
   .galeria__section {
-    max-width: 700px;
+    max-width: 100%;
     margin: auto; }
     .galeria__section .galeria__div {
-      max-width: 700px;
+      max-width: 100%;
       margin: auto;
       display: flex;
       flex-direction: wrap;
@@ -1487,47 +1481,47 @@ body {
         max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-1 .galeria__img1 {
           height: auto;
-          border: solid 1px #ffffff; }
+          padding: 0 30px; }
       .galeria__section .galeria__div .galeria__item-2 {
         max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-2 .galeria__img2 {
           height: auto;
-          border: solid 1px #ffffff; }
+          padding: 0 30px; }
       .galeria__section .galeria__div .galeria__item-3 {
         max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-3 .galeria__img3 {
           height: auto;
-          border: solid 1px #ffffff; }
+          padding: 0 30px; }
       .galeria__section .galeria__div .galeria__item-4 {
         max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-4 .galeria__img4 {
           height: auto;
-          border: solid 1px #ffffff; }
+          padding: 0 30px; }
       .galeria__section .galeria__div .galeria__item-5 {
         display: none; }
       .galeria__section .galeria__div .galeria__item-6 {
         max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-6 .galeria__img6 {
           height: auto;
-          border: solid 1px #ffffff; }
+          padding: 0 30px; }
       .galeria__section .galeria__div .galeria__item-7 {
         max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-7 .galeria__img7 {
           height: auto;
-          border: solid 1px #ffffff; }
+          padding: 0 30px; }
       .galeria__section .galeria__div .galeria__item-8 {
         max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-8 .galeria__img8 {
           height: auto;
-          border: solid 1px #ffffff; }
+          padding: 0 30px; }
       .galeria__section .galeria__div .galeria__item-9 {
         max-width: 100%; }
         .galeria__section .galeria__div .galeria__item-9 .galeria__img9 {
           height: auto;
-          border: solid 1px #ffffff; }
+          padding: 0 30px; }
   /* CONTACTO */
   .section-form {
-    width: 700px;
+    max-width: 80%;
     padding-top: 30px;
     margin: auto; }
     .section-form .form {
@@ -1546,22 +1540,19 @@ body {
           width: 80%;
           font-size: calc(0.8rem + 0.8vw); }
         .section-form .form .form__div .form__label {
-          font-size: calc(0.8rem + 0.8vw);
-          top: -4vh; }
+          font-size: calc(0.8rem + 0.8vw); }
         .section-form .form .form__div input, .section-form .form .form__div textarea {
           font-size: calc(0.8rem + 0.8vw); }
         .section-form .form .form__div input:focus ~ label, .section-form .form .form__div input:valid ~ label {
-          top: -10vh;
           font-size: calc(1rem + 1vw); }
         .section-form .form .form__div textarea:focus ~ label, .section-form .form .form__div textarea:valid ~ label {
-          top: -20vh;
           font-size: calc(1rem + 1vw); }
         .section-form .form .form__div .form__button {
           font-size: calc(1rem + 1vw); } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .contenedor {
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto; }
   /* HEADER */
   .header {
@@ -1583,7 +1574,9 @@ body {
           padding: 10px;
           font-size: calc(1rem + 1vw);
           border: none;
-          cursor: pointer; }
+          cursor: pointer;
+          position: relative;
+          z-index: 10; }
         .header .header__nav .header__div-menu .header__boton:hover {
           color: #224F99; }
         .header .header__nav .header__div-menu .header__div-submenu {
@@ -1592,7 +1585,7 @@ body {
           position: absolute;
           background-color: #165C21;
           min-width: 350px;
-          z-index: 1; }
+          z-index: 10; }
           .header .header__nav .header__div-menu .header__div-submenu .header__enlace-submenu {
             text-decoration: none;
             display: block;
@@ -1603,12 +1596,14 @@ body {
             opacity: 1;
             margin: auto;
             padding: auto;
-            text-align: center; }
+            text-align: center;
+            z-index: 10; }
           .header .header__nav .header__div-menu .header__div-submenu .header__enlace-submenu:hover {
             color: #BA3014;
             background-color: #FFD163; }
       .header .header__nav .header__div-menu:hover .header__div-submenu {
-        display: block; }
+        display: block;
+        z-index: 10; }
       .header .header__nav .header__div-barraNav {
         display: none; }
   /* FOOTER */
@@ -1640,7 +1635,7 @@ body {
       max-width: 100%;
       pointer-events: none; }
   .introduccion {
-    max-width: 900px;
+    max-width: 80%;
     margin-top: -30px; }
     .introduccion .introduccion__div .introduccion__titulo {
       font-size: calc(1.3rem + 1vw); }
@@ -1652,7 +1647,7 @@ body {
       padding: 0 20px; }
   /* CONTENIDO Y REGLAS */
   .sinopsis {
-    width: 900px;
+    max-width: 80%;
     margin-top: 0;
     display: flex;
     padding: 10px 0; }
@@ -1669,7 +1664,7 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
   .comienzo {
-    max-width: 900px;
+    max-width: 80%;
     padding: 10px 0; }
     .comienzo .comienzo__div {
       margin-top: 10px;
@@ -1684,7 +1679,7 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
   .tipos-de-cartas {
-    max-width: 900px;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column; }
@@ -1695,16 +1690,18 @@ body {
       max-width: 100%;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 30% 70%;
+      grid-template-rows: auto;
       margin-top: 10px;
       margin-bottom: 10px; }
       .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto {
         display: block; }
         .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto .tipos-de-cartas__subtitulo-jugadores {
-          margin: 10px auto;
-          font-size: calc(1rem + 1vw); }
+          margin: auto;
+          font-size: calc(1rem + 1vw);
+          text-align: center;
+          margin-bottom: 20px; }
         .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-jugadores {
-          width: 100%;
+          max-width: 100%;
           line-height: 200%;
           text-shadow: 1px 1px black;
           font-weight: 900;
@@ -1712,14 +1709,15 @@ body {
           padding: 0 20px; }
       .tipos-de-cartas .tipos-de-cartas__div-jug-y-dts .tipos-de-cartas__img-jug-y-dts {
         margin-top: -20px;
-        max-width: 900px; }
-    .tipos-de-cartas .tipos-de-cartas__span {
-      width: 80%;
-      margin: 20px auto;
-      padding: 0; }
+        max-width: 100%; }
     .tipos-de-cartas .tipos-de-cartas__div-equipos {
-      max-width: 900px;
-      margin: auto; }
+      max-width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      margin-top: 50px;
+      margin-bottom: 50px; }
       .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__div-texto .tipos-de-cartas__subtitulo-equipos {
         font-size: calc(1rem + 1vw); }
       .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-equipos {
@@ -1729,16 +1727,16 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
       .tipos-de-cartas .tipos-de-cartas__div-equipos .tipos-de-cartas__img-equipos {
-        max-width: 900px;
-        margin-top: 60px; }
+        max-width: 100%;
+        margin-top: 50px; }
     .tipos-de-cartas .tipos-de-cartas__div-modificadoras {
       max-width: 900px;
-      margin-top: 0;
+      margin-top: 50px;
       padding-bottom: 0;
       box-sizing: border-box;
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 60% 40%; }
+      grid-template-rows: auto; }
       .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__div-texto .tipos-de-cartas__subtitulo-modificadoras {
         font-size: calc(1rem + 1vw); }
       .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__div-texto .tipos-de-cartas__parrafo-modificadoras {
@@ -1748,10 +1746,10 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
       .tipos-de-cartas .tipos-de-cartas__div-modificadoras .tipos-de-cartas__img-modificadoras {
-        width: 900px;
+        max-width: 100%;
         margin-bottom: 30px; }
   .partido {
-    max-width: 900px;
+    max-width: 80%;
     padding: 0; }
     .partido .partido__div {
       margin-top: 0; }
@@ -1764,7 +1762,7 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
   .campeonato {
-    max-width: 900px;
+    max-width: 80%;
     display: flex;
     padding: 0; }
     .campeonato .campeonato__div {
@@ -1779,7 +1777,7 @@ body {
         font-size: calc(0.8rem + 0.8vw);
         padding: 0 20px; }
   .ganador {
-    max-width: 900px;
+    max-width: 80%;
     display: flex;
     padding: 20px 0; }
     .ganador .ganador__div {
@@ -1790,14 +1788,16 @@ body {
       margin-top: 0;
       border-bottom: solid 1px #FFD163; }
       .ganador .ganador__div .ganador__titulo {
-        font-size: calc(1.3rem + 1vw); }
+        font-size: calc(1.3rem + 1vw);
+        padding: 0 20px; }
       .ganador .ganador__div .ganador__parrafo {
         font-size: calc(0.8rem + 0.8vw);
         line-height: 200%;
         text-shadow: 1px 1px black;
-        font-weight: 900; }
+        font-weight: 900;
+        padding: 0 20px; }
   .contenido {
-    max-width: 900px;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     padding: 0; }
@@ -1831,25 +1831,26 @@ body {
         font-weight: 900; }
   /* HISTORIA */
   .section-creacion {
-    max-width: 900px;
+    max-width: 80%;
     padding-top: 20px;
     margin: auto;
     padding-bottom: 50px; }
     .section-creacion .section-creacion__div {
-      max-width: 900px; }
+      max-width: 100%; }
       .section-creacion .section-creacion__div .section-creacion__titulo {
         font-size: calc(1.3rem + 1vw); }
       .section-creacion .section-creacion__div .section-creacion__parrafo {
         font-size: calc(0.8rem + 0.8vw);
         line-height: 200%;
         text-shadow: 1px 1px black;
-        font-weight: 900; }
+        font-weight: 900;
+        padding: 0 20px; }
   .section-youtube {
-    max-width: 900px;
+    max-width: 80%;
     padding-top: 10px;
     padding-bottom: 10px; }
     .section-youtube .section-youtube__video {
-      width: 900px;
+      width: 100%;
       height: 750px; }
   /* IMAGENES */
   .galeria__titulo-div {
@@ -1862,52 +1863,61 @@ body {
     .galeria__titulo-div .galeria__titulo {
       font-size: calc(1.3rem + 1vw); }
   .galeria__section {
-    max-width: 900px;
+    max-width: 90%;
     margin: auto; }
     .galeria__section .galeria__div {
-      max-width: 900px;
+      max-width: 100%;
       margin: auto;
       display: flex;
       flex-direction: wrap;
       flex-wrap: wrap; }
       .galeria__section .galeria__div .galeria__item-1 {
-        max-width: 440px; }
+        max-width: 48%;
+        margin: auto; }
         .galeria__section .galeria__div .galeria__item-1 .galeria__img1 {
           height: auto; }
       .galeria__section .galeria__div .galeria__item-2 {
-        max-width: 440px; }
+        max-width: 48%;
+        margin: auto; }
         .galeria__section .galeria__div .galeria__item-2 .galeria__img2 {
           height: auto; }
       .galeria__section .galeria__div .galeria__item-3 {
-        max-width: 440px; }
+        max-width: 48%;
+        margin: auto; }
         .galeria__section .galeria__div .galeria__item-3 .galeria__img3 {
           height: auto; }
       .galeria__section .galeria__div .galeria__item-4 {
-        max-width: 440px; }
+        max-width: 48%;
+        margin: auto; }
         .galeria__section .galeria__div .galeria__item-4 .galeria__img4 {
           height: auto; }
       .galeria__section .galeria__div .galeria__item-5 {
-        max-width: 440px;
+        max-width: 48%;
+        margin: auto;
         display: none; }
       .galeria__section .galeria__div .galeria__item-6 {
-        max-width: 440px; }
+        max-width: 48%;
+        margin: auto; }
         .galeria__section .galeria__div .galeria__item-6 .galeria__img6 {
           height: auto; }
       .galeria__section .galeria__div .galeria__item-7 {
-        max-width: 440px; }
+        max-width: 48%;
+        margin: auto; }
         .galeria__section .galeria__div .galeria__item-7 .galeria__img7 {
           height: auto; }
       .galeria__section .galeria__div .galeria__item-8 {
-        max-width: 440px; }
+        max-width: 48%;
+        margin: auto; }
         .galeria__section .galeria__div .galeria__item-8 .galeria__img8 {
           height: auto; }
       .galeria__section .galeria__div .galeria__item-9 {
-        max-width: 440px; }
+        max-width: 48%;
+        margin: auto; }
         .galeria__section .galeria__div .galeria__item-9 .galeria__img9 {
           height: auto; }
   /* CONTACTO */
   .section-form {
-    width: 900px;
+    max-width: 80%;
     padding-top: 30px;
     margin: auto; }
     .section-form .form {
@@ -1926,15 +1936,12 @@ body {
           width: 80%;
           font-size: calc(0.8rem + 0.8vw); }
         .section-form .form .form__div .form__label {
-          font-size: calc(0.8rem + 0.8vw);
-          top: -4vh; }
+          font-size: calc(0.8rem + 0.8vw); }
         .section-form .form .form__div input, .section-form .form .form__div textarea {
           font-size: calc(0.8rem + 0.8vw); }
         .section-form .form .form__div input:focus ~ label, .section-form .form .form__div input:valid ~ label {
-          top: -10vh;
           font-size: calc(1rem + 1vw); }
         .section-form .form .form__div textarea:focus ~ label, .section-form .form .form__div textarea:valid ~ label {
-          top: -20vh;
           font-size: calc(1rem + 1vw); }
         .section-form .form .form__div .form__button {
           font-size: calc(1rem + 1vw); } }

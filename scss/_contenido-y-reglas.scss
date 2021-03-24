@@ -20,7 +20,7 @@
             text-shadow: 2px 2px black;            
         }
         .sinopsis__parrafo {
-            width: 100%;
+            max-width: 100%;
             font-family: $fuente-parrafo;
             color: $white;                
             line-height: 150%;
@@ -52,7 +52,7 @@
             text-shadow: 2px 2px black;            
         }
         .comienzo__parrafo {
-            width: 100%;
+            max-width: 100%;
             font-family: $fuente-parrafo;
             color: $white;                
             line-height: 150%;
@@ -97,7 +97,7 @@
                 padding: 0 20px;
             }            
             .tipos-de-cartas__parrafo-jugadores {
-                width: 90%;
+                max-width: 90%;
                 font-family: $fuente-parrafo;
                 color: $white;                
                 line-height: 150%;
@@ -113,13 +113,8 @@
             align-items: center;            
         }
     }
-    .tipos-de-cartas__span {               
-        border-bottom: solid 2px $white;
-        width: 90%;
-        margin: auto;
-        padding: 15px 0;
-        opacity: 0.7;        
-    }
+           
+    
     .tipos-de-cartas__div-equipos {
         max-width: 1200px;
         height: auto;
@@ -141,7 +136,7 @@
                 text-shadow: 2px 2px black;
             } 
             .tipos-de-cartas__parrafo-equipos {
-                width: 100%;
+                max-width: 100%;
                 font-family: $fuente-parrafo;
                 color: $white;                
                 line-height: 150%;
@@ -219,7 +214,7 @@
             text-shadow: 2px 2px black;            
         }
         .partido__parrafo {
-            width: 100%;
+            max-width: 100%;
             font-family: $fuente-parrafo;
             color: $white;                
             line-height: 150%;
@@ -251,7 +246,7 @@
             text-shadow: 2px 2px black;            
         }
         .campeonato__parrafo {
-            width: 100%;
+            max-width: 100%;
             font-family: $fuente-parrafo;
             color: $white;                
             line-height: 150%;
@@ -274,7 +269,8 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 50px;               
-        padding-bottom: 50px;     
+        padding-bottom: 50px;  
+        border-bottom: solid 1px $amarillo;   
         .ganador__titulo {
             font-family: $fuente-titulo;
             font-size: $tamaño-titulo;
@@ -320,7 +316,7 @@
             text-shadow: 2px 2px black;            
         }
         .contenido__div-total-lista {
-            width: 100%;
+            max-width: 100%;
             font-family: $fuente-parrafo;
             color: $white;                
             line-height: 150%;
@@ -353,7 +349,7 @@
             text-shadow: 2px 2px black;  
         }  
         .contenido__div-modificadoras-lista {
-            width: 100%;
+            max-width: 100%;
             font-family: $fuente-parrafo;
             color: $white;                
             line-height: 150%;
